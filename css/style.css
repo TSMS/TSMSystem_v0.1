@@ -1,6 +1,39 @@
 body {
   background-color: #bdc3c7;
-  font-family: "Open Sans", Helvetica;
+}
+
+a { color: #555555;}
+p { font-size: 1.1em; }
+
+#header-nav img{
+  float: right;
+}
+
+header ul {
+  float: right;
+  list-style-type: none;
+}
+
+header {
+  padding: 20px 0;
+}
+
+#home1{
+  margin: 1px 0;
+  font-size: 2.8em;
+  text-align: center;
+  color: #7f8c8d;
+  font-weight: 900;
+  text-shadow:#000 2px 2px 2px;
+}
+
+#home2{
+  margin: 1px 0;
+  font-size: 2.0em;
+  text-align: center;
+  color: #7f8c8d;
+  font-weight: 900;
+  text-shadow:#000 2px 2px 2px;
 }
 
 form {
@@ -77,3 +110,5 @@ button:hover, button:focus {
   color: white;
   outline: 0;
 }
+
+
