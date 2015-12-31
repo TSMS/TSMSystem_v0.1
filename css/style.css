@@ -193,4 +193,26 @@ input[type=radio]:not(old):checked +  label > span > span{
 .text-block {
   display: block;
   margin: 40px 10px;
+  padding-bottom: 40px;
+}
+
+footer {
+  color: #000;
+  height: 30px;
+  width:100%;
+  text-align:right;
+  font-weight: bold;
+  font-size: 1em;
+
+  /* for IE */
+  filter:alpha(opacity=50);
+  /* CSS3 standard */
+  opacity:0.5;
+  border-top:#27ae60 solid 4px;
+  position:absolute;
+  position: fixed;
+  bottom:0;
+}
+footer p {
+  margin-right: 10px;
 }
