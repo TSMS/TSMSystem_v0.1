@@ -6,12 +6,19 @@
 	<link rel="stylesheet" type="text/css" href="css/notifIt.css">
 </head>
 <body>
-	<button onclick="not()">Click me</button>
+	<button onclick="not()">Success</button>
+	<button onclick="not1()">Error</button>
 	<script>
 	function not(){
 	notif({
 	msg: "<b>Success:</b> In 5 seconds i'll be gone",
-	type: "success"
+	type: "Success"
+	});
+	}
+	function not1(){
+	notif({
+	msg: "<b>Error:</b> In 5 seconds i'll be gone",
+	type: "error"
 	});
 	}
 </script>

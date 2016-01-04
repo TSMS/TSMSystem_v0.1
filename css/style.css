@@ -224,3 +224,11 @@ footer {
 footer p {
   margin-right: 10px;
 }
+
+/*Validation section START*/
+.error
+{
+color:red;
+font-family:verdana, Helvetica;
+}
+/*Validation section END*/
