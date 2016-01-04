@@ -121,18 +121,17 @@ box-shadow: -4px 3px 45px -5px rgba(102,102,102,0.54);
 
 a.mobile {
 	display: block;
-	color: #fff;
+	color: #31ce73;
 	background-color: #000;
 	text-align: center;
 	padding: 7px;
+	border-top: 2px solid #31ce73;
 
 }
 
 a.mobile:active { 
-	color: #31ce73;
+	color: #fff;
 	font-weight: 900px;
-	padding-left: 10px solid #31ce73;
-	padding-right: 10px solid #31ce73;
 }
 
 @media only screen and (max-width: 320px) {
@@ -143,6 +142,10 @@ a.mobile:active {
 	.content {
 		margin-left: 0px;
 	}
+	#header ul{
+		display: none;
+	}
+
 }
 
 @media only screen and (min-width: 320px){
@@ -154,4 +157,77 @@ a.mobile:active {
 		height: 100%;
 		display: block;
 	}
+}
+
+#header ul
+{	
+	float: right;
+	list-style:none;
+	position:relative;
+	margin:0;
+	padding:0;
+	
+}
+
+#header ul a
+{	
+	display:block;
+	color:#31ce73;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height: 50px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#header ul li
+{
+	position:relative;
+	float:right;
+	margin-right:60px;
+	padding:0;
+}
+
+#header ul li.current-menu-item
+{
+	border-left: 10px solid #31ce73;
+}
+
+#header ul li:hover
+{	
+	border-left: 10px solid #31ce73;
+}
+
+#header ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#header ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#header ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#header ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#header ul li:hover > ul
+{
+	display:block
 }
